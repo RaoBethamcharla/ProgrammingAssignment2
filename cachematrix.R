@@ -4,7 +4,23 @@
 
 ## Caching Matrix
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) 
+
+{
+
+			i <- NULL   ## Initilize matrix 
+			set <- function(y) 
+			{
+				x <<- y
+				i <<- NULL
+			}
+			get <- function() x
+
+			setinv <- function(solve) i <<- solve
+
+			getinv <- function() i
+
+			list(set = set, get = get, setinv = setinv, getinv = getinv)
 
 }
 
