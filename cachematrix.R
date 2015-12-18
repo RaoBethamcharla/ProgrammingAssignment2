@@ -35,6 +35,9 @@ cacheSolve <- function(x, ...) {
 		
 	  i<- x$getinv()
 	
+	  ## check the matrix is in cache 
+	  ## if its in cache return the cached matrix and exit
+	  
 	  if(!is.null(i)) 
 	  {
 		message("getting cached data")
