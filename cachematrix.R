@@ -8,13 +8,13 @@ makeCacheMatrix <- function(x = matrix())
 
 {
 
-			i <- NULL   ## Initilize matrix 
+			i <- NULL   ## initiliazie matrix 
 			set <- function(y) 
 			{
-				x <<- y
+				x <<- y		 ## creating global variable
 				i <<- NULL
 			}
-			get <- function() x
+			get <- function() x   ##getting the value of the matix
 
 			setinv <- function(solve) i <<- solve
 
